@@ -1,7 +1,7 @@
 # Security
 
-This project is an experimental offline investigation prototype. Use synthetic or sanitized input during development. Reports can contain sensitive event identifiers and require appropriate handling.
+This project includes an experimental local tool gateway and offline investigator. Use synthetic or sanitized data during development. Do not commit organization telemetry, credentials, databases, reports or environment files.
 
-Do not commit organization telemetry, credentials, reports, or environment files. There are no production connectors or response actions in this release.
+The gateway reads, queues exports of, and can delete local SQLite documents. It has no production connector or network sender. See `docs/GATEWAY.md` for its security boundary and production prerequisites.
 
-For a vulnerability, use GitHub private vulnerability reporting if the repository owner has enabled it. Otherwise contact the owner privately; do not publish secrets or sensitive organization data in an issue. A reporting address and response policy must be established before production adoption.
+Report vulnerabilities through GitHub private vulnerability reporting if enabled, otherwise contact the repository owner privately. Do not publish secrets in issues. Establish a reporting address and response policy before production adoption.

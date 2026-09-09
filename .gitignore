@@ -9,3 +9,6 @@ build/
 dist/
 reports/
 .DS_Store
+
+*.db
+*.db-*
